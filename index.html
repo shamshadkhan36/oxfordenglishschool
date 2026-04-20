@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oxford Convent English High School & Jr College, Vasai - The School of Your Dreams. Admissions Open.">
+    <title>Home | Oxford Convent English High School & Jr College</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(10, 58, 96, 0.7), rgba(10, 58, 96, 0.7)), url('images/hero.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Highlights Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: -80px;
+            padding: 0 20px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+            border-bottom-color: var(--secondary-gold);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-gold);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Notice Board & About Mini */
+        .home-section-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .about-mini {
+            flex: 1 1 500px;
+        }
+
+        .about-mini img {
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+        }
+
+        .notice-board {
+            flex: 1 1 350px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            border-top: 5px solid var(--primary-blue);
+        }
+
+        .notice-board h3 {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .notice-list {
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .notice-item {
+            padding: 15px 0;
+            border-bottom: 1px dashed #eee;
+            position: relative;
+        }
+
+        .notice-item:hover .notice-title {
+            color: var(--primary-blue);
+        }
+
+        .notice-date {
+            font-size: 0.8rem;
+            color: var(--secondary-gold);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .notice-title {
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .new-badge {
+            background-color: #ff3b30;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+
+        /* Custom Scrollbar for Notice */
+        .notice-list::-webkit-scrollbar {
+            width: 6px;
+        }
+        .notice-list::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        .notice-list::-webkit-scrollbar-thumb {
+            background: var(--primary-blue); 
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .features-grid {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Oxford Convent Logo" class="school-logo">
+                <div class="logo-text">
+                    Oxford Convent
+                    <span>English High School & Jr College</span>
+                </div>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The School of Your Dreams</h1>
+            <p>Empowering minds, shaping futures. Welcome to a supportive and modern educational journey at Oxford Convent English High School & Jr College, Vasai.</p>
+            <div class="hero-btns">
+                <a href="admissions.html" class="btn btn-primary">Admissions Open</a>
+                <a href="about.html" class="btn btn-secondary">Explore Our Campus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Grid -->
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-chalkboard-user feature-icon"></i>
+                <h3>Experienced Teachers</h3>
+                <p>Our dedicated faculty focuses on personalized learning and grooming every student to their full potential.</p>
+            </div>
+            <div class="feature-card reveal" style="transition-delay: 0.1s;">
+                <i class="fa-solid fa-laptop-code feature-icon"></i>
+                <h3>Modern Classrooms</h3>
+                <p>Smart, digitally equipped spacious classrooms ensuring a vibrant and interactive learning environment.</p>
+            </div>
+            <div class="feature-card reveal" style="transition-delay: 0.2s;">
+                <i class="fa-solid fa-medal feature-icon"></i>
+                <h3>Holistic Activities</h3>
+                <p>Wide range of extracurricular activities and sports to foster physical and mental well-being.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <section class="container home-section-2">
+        <div class="about-mini reveal">
+            <h2 class="section-title" style="left: 0; transform: none; text-align: left;">Welcome to Oxford Convent</h2>
+            <br><br>
+            <p style="margin-bottom: 20px;">Established with a vision to provide world-class education, Oxford Convent English High School & Jr College stands out as a premier educational institute in Vasai. We believe in providing an environment that nurtures curiosity, cultivates values, and propels excellence.</p>
+            <p>Our modern infrastructure combined with a rich curriculum ensures that our students are future-ready.</p>
+            <br>
+            <a href="about.html" class="btn btn-primary">Read More About Us</a>
+        </div>
+        
+        <div class="notice-board reveal">
+            <h3><i class="fa-solid fa-bullhorn" style="color: var(--secondary-gold);"></i> Notice Board</h3>
+            <div class="notice-list">
+                <div class="notice-item">
+                    <span class="notice-date">25 April, 2026</span>
+                    <a href="#" class="notice-title">Admissions for Academic Year 2026-27 are now open! <span class="new-badge">NEW</span></a>
+                </div>
+                <div class="notice-item">
+                    <span class="notice-date">20 April, 2026</span>
+                    <a href="#" class="notice-title">Annual Sports Meet Schedule Updated.</a>
+                </div>
+                <div class="notice-item">
+                    <span class="notice-date">15 April, 2026</span>
+                    <a href="#" class="notice-title">PTA Meeting for Secondary Section on upcoming Saturday.</a>
+                </div>
+                <div class="notice-item">
+                    <span class="notice-date">10 April, 2026</span>
+                    <a href="#" class="notice-title">Results for First Term Examinations declared.</a>
+                </div>
+                <div class="notice-item">
+                    <span class="notice-date">05 April, 2026</span>
+                    <a href="#" class="notice-title">Science Fair Registration ends soon.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Oxford Convent</h3>
+                <p>Empowering minds and shaping futures in Vasai. The School of Your Dreams.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot" style="color: var(--secondary-gold); margin-right: 10px;"></i> Vasai, Maharashtra, India</li>
+                    <li><i class="fa-solid fa-phone" style="color: var(--secondary-gold); margin-right: 10px;"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-envelope" style="color: var(--secondary-gold); margin-right: 10px;"></i> info@oxfordconventvasai.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Oxford Convent English High School & Jr College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

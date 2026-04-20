@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academics at Oxford Convent English High School & Jr College, Vasai. High school and Junior College streams.">
+    <title>Academics | Oxford Convent English High School & Jr College</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .academics-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .academics-card {
+            flex: 1 1 45%;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .academics-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        .academics-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .academics-info {
+            padding: 30px;
+        }
+        .academics-info h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Streams Styles */
+        .streams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .stream-card {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .stream-card:hover {
+            background-color: var(--secondary-gold);
+        }
+        .stream-card h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        .stream-icon {
+            font-size: 4rem;
+            opacity: 0.1;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+        .stream-card p {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Oxford Convent Logo" class="school-logo">
+                <div class="logo-text">
+                    Oxford Convent
+                    <span>English High School & Jr College</span>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Academics</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> &raquo; Academics
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2 class="section-title">Educational Pathways</h2>
+        <p class="section-subtitle">A seamless journey from foundational learning to professional specialization.</p>
+
+        <div class="academics-section reveal">
+            <div class="academics-card">
+                <img src="images/classroom.png" alt="High School" class="academics-img">
+                <div class="academics-info">
+                    <h3>Secondary School (VIII to X)</h3>
+                    <p>Our secondary setup is designed to challenge students academically while supporting their developmental needs. The curriculum promotes critical thinking, extensive laboratory activities, and foundational understanding in core subjects to prepare them for their board exams.</p>
+                </div>
+            </div>
+            <div class="academics-card">
+                <img src="images/classroom.png" alt="Junior College" class="academics-img" style="filter: hue-rotate(90deg);">
+                <div class="academics-info">
+                    <h3>Junior College (XI & XII)</h3>
+                    <p>We offer specialized streams equipped with advanced laboratories and expert guidance. Our Jr College aims to provide intense scholastic preparation and conceptual clarity demanded by competitive entrance examinations.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 50px;">Jr College Streams</h2>
+        <div class="streams-grid reveal">
+            <div class="stream-card">
+                <i class="fa-solid fa-flask stream-icon"></i>
+                <h3>Science</h3>
+                <p>Physics, Chemistry, Biology, Mathematics and IT. Ideal for medical and engineering aspirants.</p>
+            </div>
+            <div class="stream-card">
+                <i class="fa-solid fa-chart-line stream-icon"></i>
+                <h3>Commerce</h3>
+                <p>Accountancy, Economics, OCM, SP, Mathematics. Perfect for business and finance careers.</p>
+            </div>
+            <div class="stream-card">
+                <i class="fa-solid fa-palette stream-icon"></i>
+                <h3>Arts</h3>
+                <p>History, Geography, Political Science, Psychology. For future leaders in humanities and civil services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Oxford Convent</h3>
+                <p>Empowering minds and shaping futures in Vasai. The School of Your Dreams.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot" style="color: var(--secondary-gold); margin-right: 10px;"></i> Vasai, Maharashtra, India</li>
+                    <li><i class="fa-solid fa-phone" style="color: var(--secondary-gold); margin-right: 10px;"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-envelope" style="color: var(--secondary-gold); margin-right: 10px;"></i> info@oxfordconventvasai.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Oxford Convent English High School & Jr College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/script.js"></script>
+</body>
+</html>

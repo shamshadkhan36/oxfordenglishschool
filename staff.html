@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the Staff of Oxford Convent English High School & Jr College, Vasai. Experienced and dedicated teachers.">
+    <title>Staff | Oxford Convent English High School & Jr College</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .staff-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .staff-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .staff-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 5rem;
+        }
+
+        .staff-info {
+            padding: 25px;
+        }
+
+        .staff-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .staff-designation {
+            color: var(--secondary-gold);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .staff-qual {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpeg" alt="Oxford Convent Logo" class="school-logo">
+                <div class="logo-text">
+                    Oxford Convent
+                    <span>English High School & Jr College</span>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Educator Family</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a> &raquo; Staff
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2 class="section-title">Guiding Lights</h2>
+        <p class="section-subtitle">Our highly qualified and experienced faculty is the backbone of our educational excellence.</p>
+
+        <div class="staff-grid reveal">
+            <!-- Staff 1 -->
+            <div class="staff-card">
+                <div class="staff-img"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="staff-info">
+                    <h3>Dr. Anjali Sharma</h3>
+                    <div class="staff-designation">Principal</div>
+                    <div class="staff-qual">Ph.D. in Education, M.A. English</div>
+                </div>
+            </div>
+            <!-- Staff 2 -->
+            <div class="staff-card">
+                <div class="staff-img"><i class="fa-solid fa-user"></i></div>
+                <div class="staff-info">
+                    <h3>Mr. Rahul Verma</h3>
+                    <div class="staff-designation">Coordinator - Jr College</div>
+                    <div class="staff-qual">M.Sc. Physics, B.Ed.</div>
+                </div>
+            </div>
+            <!-- Staff 3 -->
+            <div class="staff-card">
+                <div class="staff-img"><i class="fa-solid fa-user"></i></div>
+                <div class="staff-info">
+                    <h3>Mrs. Sunita Rao</h3>
+                    <div class="staff-designation">HOD - Mathematics</div>
+                    <div class="staff-qual">M.Sc. Mathematics, B.Ed.</div>
+                </div>
+            </div>
+            <!-- Staff 4 -->
+            <div class="staff-card">
+                <div class="staff-img"><i class="fa-solid fa-user"></i></div>
+                <div class="staff-info">
+                    <h3>Ms. Neha Gupta</h3>
+                    <div class="staff-designation">Secondary Section Teacher</div>
+                    <div class="staff-qual">M.A. History, B.Ed.</div>
+                </div>
+            </div>
+             <!-- Staff 5 -->
+             <div class="staff-card">
+                <div class="staff-img"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="staff-info">
+                    <h3>Mr. Vikram Singh</h3>
+                    <div class="staff-designation">Sports Director</div>
+                    <div class="staff-qual">B.P.Ed, National Athlete</div>
+                </div>
+            </div>
+             <!-- Staff 6 -->
+             <div class="staff-card">
+                <div class="staff-img"><i class="fa-solid fa-user"></i></div>
+                <div class="staff-info">
+                    <h3>Mrs. Priya Iyer</h3>
+                    <div class="staff-designation">Commerce Educator</div>
+                    <div class="staff-qual">M.Com., B.Ed., CA Inter</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Oxford Convent</h3>
+                <p>Empowering minds and shaping futures in Vasai. The School of Your Dreams.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot" style="color: var(--secondary-gold); margin-right: 10px;"></i> Vasai, Maharashtra, India</li>
+                    <li><i class="fa-solid fa-phone" style="color: var(--secondary-gold); margin-right: 10px;"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-envelope" style="color: var(--secondary-gold); margin-right: 10px;"></i> info@oxfordconventvasai.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Oxford Convent English High School & Jr College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/script.js"></script>
+</body>
+</html>
